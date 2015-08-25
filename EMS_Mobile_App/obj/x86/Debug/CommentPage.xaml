@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="EMS_Mobile_App.CommentPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EMS_Mobile_App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/ems pic1.jpg"/>
+        </Grid.Background>
+        <Button x:ConnectionId='1' Content="Back" HorizontalAlignment="Left" Margin="281,570,0,0" VerticalAlignment="Top"                      FontSize="14"/>
+        <TextBox x:Name="txtComments" HorizontalAlignment="Left" Margin="198,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="148" FontSize="12"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="198,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="34" FontFamily="Global User Interface"/>
+        <RadioButton x:Name="radComplain" Content="Complains" HorizontalAlignment="Left" Margin="173,236,0,0" VerticalAlignment="Top" Height="62" Width="154" FontSize="14" FontFamily="Global User Interface"/>
+        <RadioButton x:Name="radCompliment" Content="Compliment" HorizontalAlignment="Left" Margin="277,236,-45,0" VerticalAlignment="Top" Height="71" Width="158" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="198,303,0,0" TextWrapping="Wrap" Text="Write your comment below" VerticalAlignment="Top" Height="16" Width="180" FontSize="14"/>
+        <TextBox x:Name="txtSurname" HorizontalAlignment="Left" Margin="198,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="34" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="120,140,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="32" Width="78" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,174,0,0" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Top" Height="32" Width="78" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="133,213,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Height="32" Width="78" FontSize="20"/>
+        <Image HorizontalAlignment="Left" Height="62" Margin="10,0,0,0" VerticalAlignment="Top" Width="65" Source="Assets/ems_image.png"/>
+        <Image HorizontalAlignment="Left" Height="148" Margin="44,319,0,0" VerticalAlignment="Top" Width="149" Source="Assets/EMS.jpg"/>
+        <Button x:ConnectionId='2' x:Name="btnComment" Content="Comment" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,570,0,0"                          FontSize="14"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="198,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="34" FontSize="14"/>
+        <Image HorizontalAlignment="Left" Height="62" Margin="10,0,0,0" VerticalAlignment="Top" Width="65" Source="Assets/ems-logo-generic.jpg"/>
+        <Button x:ConnectionId='3' x:Name="btnViewPreviousComm" Content="View Comment" HorizontalAlignment="Left" Margin="154,570,0,0" VerticalAlignment="Top"                                   FontSize="12"/>
+
+    </Grid>
+</Page>
+

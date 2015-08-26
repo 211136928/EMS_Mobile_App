@@ -74,7 +74,7 @@ namespace EMS_Mobile_App
 
             try
             {
-              if(txtID.Text =="" && txtName.Text =="" && txtPassword.Password == "" && surname == "" && cell == "" && email =="")
+                if (IDnum == "" && name == "" && password == "" && surname == "" && cell == "" && email == "")
               {
                   messageBox("all field must be fill with yuor correct details");
               }

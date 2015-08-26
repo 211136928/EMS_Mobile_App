@@ -57,7 +57,7 @@ namespace EMS_Mobile_App
         {
 
             
-            this.Frame.Navigate(typeof(HomePage));
+           // this.Frame.Navigate(typeof(HomePage));
             string email, password;
 
             Method objM = new Method();
@@ -66,11 +66,19 @@ namespace EMS_Mobile_App
             password = txtPassword.Password;
 
             var valid = objM.getLogIN(email, password);
-
-            if (valid != null)
+            if(email.Trim() == "" && password.Trim() == "")
             {
-                this.Frame.Navigate(typeof(HomePage));
-
+                messageBox("please enter yuor email and password");
+            }else
+                {
+                if (valid != null)
+                    {
+                        this.Frame.Navigate(typeof(HomePage));
+                    }
+                else
+                {
+                    messageBox("you passsword and email dont match please rectify");
+                }
             }
 
         }
@@ -78,6 +86,18 @@ namespace EMS_Mobile_App
         private void btnForgotPassword_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ResetPasswordPage));
+
+        }
+
+        private async void messageBox(string msg)
+        {
+            var msgDisplay = new Windows.UI.Popups.MessageDialog(msg);
+            await msgDisplay.ShowAsync();
+        }
+
+        private void btnRequestHelp_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

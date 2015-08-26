@@ -36,14 +36,10 @@ namespace EMS_Mobile_App.Class
                     {
                         msg = "your id must be 13 digit log";
                     }
-
-
-
-
                 }
                 catch (Exception)
                 {
-                    msg = "your ID is not a vaild SA ID";
+                    msg = "your ID must not contain alphabetics";
                     return msg;
                 }
 

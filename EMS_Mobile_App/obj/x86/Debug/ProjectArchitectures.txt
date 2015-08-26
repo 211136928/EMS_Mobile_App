@@ -1,1 +1,1 @@
-C:\Users\wisani\Desktop\New folder\wisani\EMS_Mobile_App\EMS_Mobile_App\EMS_Mobile_App.csproj;x86
+C:\Users\wisani\Desktop\EMS_Mobile_App\EMS_Mobile_App\EMS_Mobile_App.csproj;x86

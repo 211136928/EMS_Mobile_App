@@ -26,6 +26,8 @@ namespace EMS_Mobile_App
         public viewPreviousCommentPage()
         {
             this.InitializeComponent();
+            lstViewPreComm.Items.Add("Type of comment                  Comment                         Date");
+            lstViewPreComm.Items.Add("");
         }
 
         /// <summary>
@@ -35,10 +37,34 @@ namespace EMS_Mobile_App
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+           // Method obj = new Method();
+
+            /*  getComment();
+            string msg = "";
+            lstViewPreComm.Items.Add("Type of comment                  Comment                         Date");
+            lstViewPreComm.Items.Add("");
+
+
             Method obj = new Method();
+             int comID = 0;
+             var objCom = obj.getComment(comID);
 
-            getComment();
-
+          
+           if (objCom == null)
+             {
+                 msg = "No record was found in the data base, you didnt make any comment about our servince ";
+                 messageBox(msg);
+             }
+             else
+             {
+                 while (objCom != null)
+                 {
+                     lstViewPreComm.Items.Add(objCom.Name + "  " + objCom.Comment);
+                     comID = comID + 1;
+                     objCom = obj.getComment(comID);
+                 }
+             }
+             */
 
         }
 
@@ -59,7 +85,7 @@ namespace EMS_Mobile_App
             lstViewPreComm.Items.Add("");
 
 
-            Method obj = new Method();
+           /* Method obj = new Method();
             int comID = 0;
             var objCom = obj.getComment(comID);
 
@@ -78,8 +104,39 @@ namespace EMS_Mobile_App
                     objCom = obj.getComment(comID);
                 }
             }
-
+            */
             
+        }
+
+        private void btnView_Click(object sender, RoutedEventArgs e)
+        {
+
+            getComment();
+            string msg = "";
+           
+
+
+            Method obj = new Method();
+            int comID = 0;
+            var objCom = obj.getComment(comID);
+
+
+            if (objCom == null)
+            {
+                msg = "No record was found in the data base, you didnt make any comment about our servince ";
+                messageBox(msg);
+            }
+            else
+            {
+                while (objCom != null)
+                {
+                    lstViewPreComm.Items.Add(objCom.Name + "  " + objCom.Comment);
+                    comID = comID + 1;
+                    objCom = obj.getComment(comID);
+                }
+            }
+            
+
         }
     }
 }

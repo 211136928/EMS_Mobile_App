@@ -8,7 +8,7 @@
     x:Class="EMS_Mobile_App.HomePage"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush Stretch="Fill" ImageSource="Assets/ems pic1.jpg"/>
+        <ImageBrush Stretch="Fill" ImageSource="Assets/ambu booard.jpg"/>
     </Page.Background>
 
     <Grid>
@@ -43,13 +43,13 @@
             </Button.Background>
         </Button>
 
-        <Maps:MapControl x:Name="myMap" HorizontalAlignment="Left" Margin="85,0,0,0" VerticalAlignment="Top" Width="315" Height="297" Grid.ColumnSpan="3">
+        <Maps:MapControl x:Name="myMap" HorizontalAlignment="Left" Margin="107,29,0,0" VerticalAlignment="Top" Width="293" Height="243" Grid.ColumnSpan="3">
             <PivotItem Header="PivotItem -1">
                 <Grid/>
             </PivotItem>
         </Maps:MapControl>
         <TextBlock x:Name="lblDisplayName" HorizontalAlignment="Left" Margin="31.667,0,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="29" Width="175" Foreground="#FF328AD3" FontSize="18" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <ListView x:Name="lstView" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="100" Margin="53,437,0,0" VerticalAlignment="Top" Width="284" RenderTransformOrigin="0.5,0.5">
+        <ListView x:Name="lstView" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="98.756" Margin="40.655,438.244,0,0" VerticalAlignment="Top" Width="296.252" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <ListView.RenderTransform>
                 <CompositeTransform SkewX="-8.491" TranslateX="-7.465"/>
             </ListView.RenderTransform>

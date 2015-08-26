@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush ImageSource="Assets/ems pic1.jpg" Stretch="Fill"/>
+        <ImageBrush ImageSource="Assets/ambu booard.jpg" Stretch="Fill"/>
     </Page.Background>
 
     <Grid>
@@ -55,7 +55,7 @@
             <TextBlock HorizontalAlignment="Left" Margin="155,231,0,0" TextWrapping="Wrap" Text="Province" VerticalAlignment="Top" RenderTransformOrigin="3.134,2.855" FontSize="20"/>
             <TextBlock HorizontalAlignment="Left" Margin="99,-167,0,0" TextWrapping="Wrap" Text="Update personal details" VerticalAlignment="Top" Height="25" Width="264" FontSize="20"/>
             <ListBox x:Name="lstPovince" HorizontalAlignment="Left" Height="29" Margin="235,226,0,0" VerticalAlignment="Top" Width="82"/>
-            <TextBlock x:Name="lblDisplayName" HorizontalAlignment="Left" Margin="204,-201,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="29" Width="181" FontSize="20" FontWeight="Bold" Foreground="#FF6EB434"/>
+            <TextBlock x:Name="lblDisplayName" HorizontalAlignment="Left" Margin="204,-236,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="29" Width="181" FontSize="20" FontWeight="Bold" Foreground="#FF6EB434"/>
         </Grid>
         <Image HorizontalAlignment="Left" Height="54" Margin="0,10,0,0" VerticalAlignment="Top" Width="54" Source="Assets/ems_image.png"/>
         <Button x:Name="btnVerifyUser" Content="Verify" HorizontalAlignment="Left" Margin="87.333,187,0,0" VerticalAlignment="Top" Height="41" Click="btnVerifyUser_Click" Grid.Column="1">

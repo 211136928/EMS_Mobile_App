@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush Stretch="Fill" ImageSource="Assets/ems pic1.jpg"/>
+        <ImageBrush Stretch="Fill" ImageSource="Assets/ambu booard.jpg"/>
     </Page.Background>
 
     <Grid>

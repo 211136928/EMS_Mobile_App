@@ -88,14 +88,14 @@ namespace EMS_Mobile_App.Class
        // this method will set complains and compliment in database
 
 
-       public void setComplains(int cID ,string id, string name, string surname, string email, string comment, string comORcompli)
+       public void setComplains(int cID, string id, string name, string surname, string email, string comment, string comORcompli)
        {
            string  date = DateTime.Now.ToString();
            using (var db = new SQLite.SQLiteConnection(app.dbPath))
            {
                int success = db.Insert(new tblComplains()
                {
-                complainID = 0,
+                 complainID = 0,
                  ID = id,
                  Name = name,
                  Email = email,
@@ -103,8 +103,8 @@ namespace EMS_Mobile_App.Class
                  Comment = comment,
                  complainOrcompliment = comORcompli,
                  ComDate = date,
-                 
                });
+               
            }
 
        }
@@ -134,7 +134,7 @@ namespace EMS_Mobile_App.Class
        }
 
 
-       // this method udate user details 
+       // this method update user details 
        public void updateDetails(string surname, string cell, string email, string homeAddress, string id)
        {
 
@@ -142,8 +142,7 @@ namespace EMS_Mobile_App.Class
            {
                var updateLogin = db.Query<tblLogIn>("update tblLogIn set Username ='" + email + "' where ID = '" + id + "'").FirstOrDefault();
 
-               var details = db.Query<tblRegister>("update tblRegister set Surname = '"+surname+"' where ID = '"+id+"' ").FirstOrDefault();
-
+               var details = db.Query<tblRegister>("update tblRegister set Surname = '" + surname + "',CellNum = '" + cell + "',Email = '" + email + "'  where ID = '" + id + "' ").FirstOrDefault();
            }
        }
 
@@ -167,8 +166,7 @@ namespace EMS_Mobile_App.Class
            using (var db = new SQLite.SQLiteConnection(app.dbPath))
            {
                int success = db.Insert(new tblRequest_EMS()
-               {
-                  
+               { 
                 RequestID = R_ID,
                 Location = location,
                 Status = status,

@@ -10,9 +10,16 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="Assets/ems pic1.jpg"/>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/ambu booard.jpg"/>
         </Grid.Background>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="281,570,0,0" VerticalAlignment="Top" Click="Button_Click" FontSize="14"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="281,570,0,0" VerticalAlignment="Top" Click="Button_Click" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="White"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <TextBox x:Name="txtComments" HorizontalAlignment="Left" Margin="198,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="148" FontSize="12"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="198,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="34" FontFamily="Global User Interface"/>
         <RadioButton x:Name="radComplain" Content="Complains" HorizontalAlignment="Left" Margin="173,236,0,0" VerticalAlignment="Top" Height="62" Width="154" FontSize="14" FontFamily="Global User Interface"/>
@@ -24,10 +31,24 @@
         <TextBlock HorizontalAlignment="Left" Margin="133,213,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Height="32" Width="78" FontSize="20"/>
         <Image HorizontalAlignment="Left" Height="62" Margin="10,0,0,0" VerticalAlignment="Top" Width="65" Source="Assets/ems_image.png"/>
         <Image HorizontalAlignment="Left" Height="148" Margin="44,319,0,0" VerticalAlignment="Top" Width="149" Source="Assets/EMS.jpg"/>
-        <Button x:Name="btnComment" Content="Comment" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,570,0,0" Click="btnComment_Click" FontSize="14"/>
+        <Button x:Name="btnComment" Content="Comment" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,570,0,0" Click="btnComment_Click" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="198,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Height="34" FontSize="14"/>
         <Image HorizontalAlignment="Left" Height="62" Margin="10,0,0,0" VerticalAlignment="Top" Width="65" Source="Assets/ems-logo-generic.jpg"/>
-        <Button x:Name="btnViewPreviousComm" Content="View Comment" HorizontalAlignment="Left" Margin="154,570,0,0" VerticalAlignment="Top" Click="btnViewPreviousComm_Click" FontSize="12"/>
+        <Button x:Name="btnViewPreviousComm" Content="View Comment" HorizontalAlignment="Left" Margin="154,570,0,0" VerticalAlignment="Top" Click="btnViewPreviousComm_Click" FontSize="12">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Page>

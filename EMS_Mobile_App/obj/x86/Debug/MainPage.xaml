@@ -7,11 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush Stretch="Fill" ImageSource="Assets/ems pic1.jpg"/>
+        <ImageBrush Stretch="Fill" ImageSource="Assets/ambu booard.jpg"/>
     </Page.Background>
 
     <Grid>
-        <Button x:Name="btnRequestHelp" Content="Send Request" HorizontalAlignment="Left" Margin="10,582,0,0" VerticalAlignment="Top">
+        <Button x:ConnectionId='1' x:Name="btnRequestHelp" Content="Send Request" HorizontalAlignment="Left" Margin="10,582,0,0" VerticalAlignment="Top"                             >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -19,7 +19,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:ConnectionId='1' x:Name="btnLogIn" Content="Log In" HorizontalAlignment="Left" Margin="73,228,0,0" VerticalAlignment="Top" Width="256"                       >
+        <Button x:ConnectionId='2' x:Name="btnLogIn" Content="Log In" HorizontalAlignment="Left" Margin="73,228,0,0" VerticalAlignment="Top" Width="256"                       >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -27,7 +27,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:ConnectionId='2' x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="220,582,0,0" VerticalAlignment="Top" Width="152"                          >
+        <Button x:ConnectionId='3' x:Name="btnRegister" Content="Register" HorizontalAlignment="Left" Margin="220,582,0,0" VerticalAlignment="Top" Width="152"                          >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
@@ -40,7 +40,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="-1,208,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" FontSize="20"/>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="106,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" FontSize="12"/>
         <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="106,194,0,0" VerticalAlignment="Top" Width="223"/>
-        <Button x:ConnectionId='3' x:Name="btnForgotPassword" Content="Forgot password?" HorizontalAlignment="Left" Margin="73,290,0,0" VerticalAlignment="Top" FontSize="12"                                 Width="108" RenderTransformOrigin="0.406,-0.629">
+        <Button x:ConnectionId='4' x:Name="btnForgotPassword" Content="Forgot password?" HorizontalAlignment="Left" Margin="73,290,0,0" VerticalAlignment="Top" FontSize="12"                                 Width="108" RenderTransformOrigin="0.406,-0.629">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>

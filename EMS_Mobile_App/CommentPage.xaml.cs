@@ -45,8 +45,42 @@ namespace EMS_Mobile_App
 
         private void btnComment_Click(object sender, RoutedEventArgs e)
         {
-           Method objCom = new Method();
-           validation objValidate = new validation();
+            var objCom = new Method();
+
+            string name, surname, email, comment, id, comOrcompl, date;
+            int complainID = 0;
+
+
+            try
+            {
+                email = txtEmail.Text;
+                name = txtName.Text;
+                surname = txtSurname.Text;
+                comment = txtComments.Text;
+                comOrcompl = "complains";
+                date = DateTime.Now.ToString();
+
+                var valid = objCom.getRegUser(name);
+                if (valid != null)
+                {
+                    id = valid.ID;
+                    objCom.setComplains(complainID, id, name, surname, email, comment, comOrcompl);
+
+                }
+                else
+                {
+                    messageBox("ID not found");
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                messageBox("error " + ex.Message);
+            }
+
+
+            /*var objCom = new Method();
+           var objValidate = new validation();
            string msg = "";
 
             string name,surname, email,comment, id,comOrcompl, date;
@@ -67,40 +101,35 @@ namespace EMS_Mobile_App
           
 
             // validadate all variable and set the comment in table comment
-            try
+            /*try
             {
-               
-                
                     msg = objValidate.validateString(name);
                     msg +=  objValidate.validateString(surname);
                     msg +=  objValidate.validateEmail(email);
                if (msg == "") 
                {
-                     id = valid.ID;
-                   if(id== null)
+                    id = valid.ID;
+                    if(id== null)
                     {
                          messageBox("Please name sure that you enter your correct name");
-                    }else
-                        { 
-                            objCom.setComplains(complainID, id, name, surname, email, comment, comOrcompl);
-                            messageBox("Thanks you for commenting, your input will make us improve our service" + id);
+                    }
+                   else
+                   { 
+                      objCom.setComplains(complainID, id, name, surname, email, comment, comOrcompl);
+                       messageBox("Thanks you for commenting, your input will make us improve our service" + id);
                             //this.Frame.Navigate(typeof(MainPage));
-                        }
+                    }
                 }
-
                else
                {
                    messageBox(msg);
                }
-                             
-               
-                    
-                
             }
             catch(Exception ex)
             {
                 messageBox(ex.Message);
             }
+             */
    }        
   private async void messageBox(string msg)
         {

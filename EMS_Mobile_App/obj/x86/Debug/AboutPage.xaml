@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="EMS_Mobile_App.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EMS_Mobile_App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush Stretch="Fill" ImageSource="Assets/ambulance.jpg"/>
+    </Page.Background>
+    <Page.Foreground>
+        <ImageBrush Stretch="Fill" ImageSource="Assets/ems pic1.jpg"/>
+    </Page.Foreground>
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="401" Width="380" FontSize="16" Foreground="#FFD41A10">
+        	<Span>
+        		<Run Text="About This system aim to help user who is in need of an emergency pick up by an ambulance, instead of making a phone call to the Emergency Medical Service call centre. He/she can use his/her smart-phone to send a request to the health emergency respond team by using a mobile application. A user will have to register and get a mobile application to login and send request to the EMS. "/>
+        	</Span>
+        	<LineBreak/>
+        	<Span>
+        		<Run Text="By just sending the request through the mobile application, the location of the person will be traced and our team will be send directly to the person's location anywhere in the country. "/>
+        	</Span>
+        	<LineBreak/>
+        	<Span>
+        		<Run Text="The aim of the system is to minimize the problem where people makes inquiries through a phone calling. Which is very complicated for a person who is making the request at the call centre of EMS. Sometimes the is misunderstanding of where the person is located as well as miscommunication between the sender and receptionist and how long it will take for respond team to help the person. "/>
+        	</Span>
+        	<LineBreak/>
+        	<Run Text=". "/>
+        </TextBlock>
+        <Image HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="70" Source="Assets/ems-logo-generic.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="70,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" RenderTransformOrigin="0.5,0.5" Width="270" FontSize="18">
+        	<Run Text="About "/>
+        	<Run Text="EMS Mobile Application"/>
+        </TextBlock>
+
+    </Grid>
+</Page>
+

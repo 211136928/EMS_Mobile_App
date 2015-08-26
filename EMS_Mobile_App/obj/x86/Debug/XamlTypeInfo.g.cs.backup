@@ -124,35 +124,37 @@ namespace EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[13];
-            _typeNameTable[0] = "EMS_Mobile_App.CommentPage";
+            _typeNameTable = new string[14];
+            _typeNameTable[0] = "EMS_Mobile_App.AboutPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "EMS_Mobile_App.ForgettenPassword";
-            _typeNameTable[4] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>";
-            _typeNameTable[5] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[6] = "EMS_Mobile_App.HomePage";
-            _typeNameTable[7] = "EMS_Mobile_App.MainPage";
-            _typeNameTable[8] = "EMS_Mobile_App.registerPage";
-            _typeNameTable[9] = "EMS_Mobile_App.ResetPasswordPage";
-            _typeNameTable[10] = "EMS_Mobile_App.UpdateDetailsPage";
-            _typeNameTable[11] = "EMS_Mobile_App.viewPreviousCommentPage";
-            _typeNameTable[12] = "EMS_Mobile_App.viewStatusPage";
+            _typeNameTable[3] = "EMS_Mobile_App.CommentPage";
+            _typeNameTable[4] = "EMS_Mobile_App.ForgettenPassword";
+            _typeNameTable[5] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>";
+            _typeNameTable[6] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[7] = "EMS_Mobile_App.HomePage";
+            _typeNameTable[8] = "EMS_Mobile_App.MainPage";
+            _typeNameTable[9] = "EMS_Mobile_App.registerPage";
+            _typeNameTable[10] = "EMS_Mobile_App.ResetPasswordPage";
+            _typeNameTable[11] = "EMS_Mobile_App.UpdateDetailsPage";
+            _typeNameTable[12] = "EMS_Mobile_App.viewPreviousCommentPage";
+            _typeNameTable[13] = "EMS_Mobile_App.viewStatusPage";
 
-            _typeTable = new global::System.Type[13];
-            _typeTable[0] = typeof(global::EMS_Mobile_App.CommentPage);
+            _typeTable = new global::System.Type[14];
+            _typeTable[0] = typeof(global::EMS_Mobile_App.AboutPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::EMS_Mobile_App.ForgettenPassword);
-            _typeTable[4] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.DependencyObject>);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[6] = typeof(global::EMS_Mobile_App.HomePage);
-            _typeTable[7] = typeof(global::EMS_Mobile_App.MainPage);
-            _typeTable[8] = typeof(global::EMS_Mobile_App.registerPage);
-            _typeTable[9] = typeof(global::EMS_Mobile_App.ResetPasswordPage);
-            _typeTable[10] = typeof(global::EMS_Mobile_App.UpdateDetailsPage);
-            _typeTable[11] = typeof(global::EMS_Mobile_App.viewPreviousCommentPage);
-            _typeTable[12] = typeof(global::EMS_Mobile_App.viewStatusPage);
+            _typeTable[3] = typeof(global::EMS_Mobile_App.CommentPage);
+            _typeTable[4] = typeof(global::EMS_Mobile_App.ForgettenPassword);
+            _typeTable[5] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.DependencyObject>);
+            _typeTable[6] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[7] = typeof(global::EMS_Mobile_App.HomePage);
+            _typeTable[8] = typeof(global::EMS_Mobile_App.MainPage);
+            _typeTable[9] = typeof(global::EMS_Mobile_App.registerPage);
+            _typeTable[10] = typeof(global::EMS_Mobile_App.ResetPasswordPage);
+            _typeTable[11] = typeof(global::EMS_Mobile_App.UpdateDetailsPage);
+            _typeTable[12] = typeof(global::EMS_Mobile_App.viewPreviousCommentPage);
+            _typeTable[13] = typeof(global::EMS_Mobile_App.viewStatusPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -187,16 +189,17 @@ namespace EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_CommentPage() { return new global::EMS_Mobile_App.CommentPage(); }
-        private object Activate_3_ForgettenPassword() { return new global::EMS_Mobile_App.ForgettenPassword(); }
-        private object Activate_6_HomePage() { return new global::EMS_Mobile_App.HomePage(); }
-        private object Activate_7_MainPage() { return new global::EMS_Mobile_App.MainPage(); }
-        private object Activate_8_registerPage() { return new global::EMS_Mobile_App.registerPage(); }
-        private object Activate_9_ResetPasswordPage() { return new global::EMS_Mobile_App.ResetPasswordPage(); }
-        private object Activate_10_UpdateDetailsPage() { return new global::EMS_Mobile_App.UpdateDetailsPage(); }
-        private object Activate_11_viewPreviousCommentPage() { return new global::EMS_Mobile_App.viewPreviousCommentPage(); }
-        private object Activate_12_viewStatusPage() { return new global::EMS_Mobile_App.viewStatusPage(); }
-        private void VectorAdd_4_IList(object instance, object item)
+        private object Activate_0_AboutPage() { return new global::EMS_Mobile_App.AboutPage(); }
+        private object Activate_3_CommentPage() { return new global::EMS_Mobile_App.CommentPage(); }
+        private object Activate_4_ForgettenPassword() { return new global::EMS_Mobile_App.ForgettenPassword(); }
+        private object Activate_7_HomePage() { return new global::EMS_Mobile_App.HomePage(); }
+        private object Activate_8_MainPage() { return new global::EMS_Mobile_App.MainPage(); }
+        private object Activate_9_registerPage() { return new global::EMS_Mobile_App.registerPage(); }
+        private object Activate_10_ResetPasswordPage() { return new global::EMS_Mobile_App.ResetPasswordPage(); }
+        private object Activate_11_UpdateDetailsPage() { return new global::EMS_Mobile_App.UpdateDetailsPage(); }
+        private object Activate_12_viewPreviousCommentPage() { return new global::EMS_Mobile_App.viewPreviousCommentPage(); }
+        private object Activate_13_viewStatusPage() { return new global::EMS_Mobile_App.viewStatusPage(); }
+        private void VectorAdd_5_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -213,9 +216,9 @@ namespace EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  EMS_Mobile_App.CommentPage
+            case 0:   //  EMS_Mobile_App.AboutPage
                 userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_CommentPage;
+                userType.Activator = Activate_0_AboutPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -228,68 +231,75 @@ namespace EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo
                 xamlType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  EMS_Mobile_App.ForgettenPassword
+            case 3:   //  EMS_Mobile_App.CommentPage
                 userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_ForgettenPassword;
+                userType.Activator = Activate_3_CommentPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>
-                userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_4_IList;
+            case 4:   //  EMS_Mobile_App.ForgettenPassword
+                userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_ForgettenPassword;
+                userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Windows.UI.Xaml.DependencyObject
+            case 5:   //  System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>
+                userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_5_IList;
+                xamlType = userType;
+                break;
+
+            case 6:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  EMS_Mobile_App.HomePage
+            case 7:   //  EMS_Mobile_App.HomePage
                 userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_HomePage;
+                userType.Activator = Activate_7_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  EMS_Mobile_App.MainPage
+            case 8:   //  EMS_Mobile_App.MainPage
                 userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_MainPage;
+                userType.Activator = Activate_8_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  EMS_Mobile_App.registerPage
+            case 9:   //  EMS_Mobile_App.registerPage
                 userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_registerPage;
+                userType.Activator = Activate_9_registerPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  EMS_Mobile_App.ResetPasswordPage
+            case 10:   //  EMS_Mobile_App.ResetPasswordPage
                 userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_ResetPasswordPage;
+                userType.Activator = Activate_10_ResetPasswordPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  EMS_Mobile_App.UpdateDetailsPage
+            case 11:   //  EMS_Mobile_App.UpdateDetailsPage
                 userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_UpdateDetailsPage;
+                userType.Activator = Activate_11_UpdateDetailsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  EMS_Mobile_App.viewPreviousCommentPage
+            case 12:   //  EMS_Mobile_App.viewPreviousCommentPage
                 userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_viewPreviousCommentPage;
+                userType.Activator = Activate_12_viewPreviousCommentPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  EMS_Mobile_App.viewStatusPage
+            case 13:   //  EMS_Mobile_App.viewStatusPage
                 userType = new global::EMS_Mobile_App.EMS_Mobile_App_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_viewStatusPage;
+                userType.Activator = Activate_13_viewStatusPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

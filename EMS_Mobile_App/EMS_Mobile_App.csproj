@@ -88,6 +88,9 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -135,10 +138,14 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\ambu booard.jpg" />
+    <Content Include="Assets\ambulance.jpg" />
     <Content Include="Assets\ems pic1.jpg" />
     <Content Include="Assets\ems-logo-generic.jpg" />
     <Content Include="Assets\EMS.jpg" />
+    <Content Include="Assets\images %281%29.jpg" />
     <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\sky blue.jpg" />
     <Content Include="Assets\SmallLogo.scale-240.png" />
     <Content Include="Assets\SplashScreen.scale-240.png" />
     <Content Include="Assets\Square71x71Logo.scale-240.png" />
@@ -150,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CommentPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

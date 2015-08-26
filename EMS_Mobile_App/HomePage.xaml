@@ -8,7 +8,7 @@
     x:Class="EMS_Mobile_App.HomePage"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush Stretch="Fill" ImageSource="Assets/ems pic1.jpg"/>
+        <ImageBrush Stretch="Fill" ImageSource="Assets/ambu booard.jpg"/>
     </Page.Background>
 
     <Grid>
@@ -43,7 +43,7 @@
             </Button.Background>
         </Button>
 
-        <Maps:MapControl x:Name="myMap" HorizontalAlignment="Left" Margin="85,65,0,0" VerticalAlignment="Top" Width="315" Height="501" Grid.ColumnSpan="3">
+        <Maps:MapControl x:Name="myMap" HorizontalAlignment="Left" Margin="107,29,0,0" VerticalAlignment="Top" Width="293" Height="243" Grid.ColumnSpan="3">
             <PivotItem Header="PivotItem -1">
                 <Grid/>
             </PivotItem>

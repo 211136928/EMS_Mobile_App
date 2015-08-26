@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using EMS_Mobile_App.table;
+using EMS_Mobile_App.Table;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -51,8 +52,13 @@ namespace EMS_Mobile_App
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {   
          
-            obj = new validation();
+           var objvalidate = new validation();
+           var objReg = new Method();
+           var objRegister = new tblRegister();
+
             String IDnum,cell, name, surname, homeAddress, email, password, repassword, gender;
+            string msg = "";
+           // string n = "/n";
             int age;
             IDnum = txtID.Text;
             name = txtName.Text;
@@ -61,22 +67,40 @@ namespace EMS_Mobile_App
             password = txtPassword.Password;
             repassword = txtRe_password.Password;
             surname = txtSurname.Text;
-           cell = txtCellnumber.Text;
+            cell = txtCellnumber.Text;
 
-
-            var objReg = new Method();
+            
+          
 
             try
             {
+              if(txtID.Text =="" && txtName.Text =="" && txtPassword.Password == "" && surname == "" && cell == "" && email =="")
+              {
+                  messageBox("all field must be fill with yuor correct details");
+              }
+             
+                   msg += objvalidate.IDValidation(IDnum); 
+                   msg += objvalidate.validatePassword(password, repassword);
+                     
 
-              gender = obj.getGender(IDnum);
-              age = obj.getAge(IDnum);
 
-              objReg.setRegister(IDnum, name, surname, email, cell, gender, age, password);
-              
-              messageBox("Thanks you for registering for Emergency Medical Servise");
-            
-                 this.Frame.Navigate(typeof(MainPage));
+
+                 
+                       if (objReg.getRegisterUser(IDnum) == null)
+                       {
+                           gender = objvalidate.getGender(IDnum);
+                           age = objvalidate.getAge(IDnum);
+                           objReg.setRegister(IDnum, name, surname, email, cell, gender, age, password);
+
+                           messageBox("Thanks you for registering for Emergency Medical Servise");
+
+                           this.Frame.Navigate(typeof(MainPage));
+                       }
+                       else
+                           {
+                               messageBox("user already registerd in the system");
+                           }
+                
             }
             catch (Exception ex)
             {

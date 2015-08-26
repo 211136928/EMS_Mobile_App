@@ -47,6 +47,7 @@ namespace EMS_Mobile_App
             
         }
 
+
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
 
@@ -56,14 +57,19 @@ namespace EMS_Mobile_App
             email = txtEmail.Text;
             cellNumber = txtCellNumber.Text;
             homeAddress = txtHomeAddress.Text;
-            province = "";
+            province = "Guateng";
 
             Method obj = new Method();
+            if(surname.Trim() != "" && email.Trim() != "" && cellNumber.Trim() != "" )
+            {
+                obj.updateDetails(surname, cellNumber, email, homeAddress, idNum);
+                messageBox("Your details has been updated");
+            }
+            else
+            {
 
-            obj.updateDetails(surname, cellNumber, email, homeAddress, "9102015333086");
-
-
-
+                messageBox("fill all the field with data");
+            }
 
 
         }
@@ -91,17 +97,18 @@ namespace EMS_Mobile_App
             }
             else
             {
+                idNum = txtID.Text;
                 txtID.IsEnabled = false;
                 btnUpdate.IsEnabled = true;
                 txtEmail.IsEnabled = true;
                 txtSurname.IsEnabled = true;
                 txtCellNumber.IsEnabled = true;
                 txtHomeAddress.IsEnabled = true;
-
+             
                 lblDisplayName.Text = user.Name;
                 txtSurname.Text = user.Surname;
                 txtEmail.Text = user.Email;
-                txtCellNumber.Text = user.CellNum;
+                //txtCellNumber.Text = user.CellNum;
             }
 
 

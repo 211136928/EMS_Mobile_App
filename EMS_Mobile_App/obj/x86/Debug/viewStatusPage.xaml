@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.Background>
-        <ImageBrush Stretch="Fill" ImageSource="Assets/ems pic1.jpg"/>
+        <ImageBrush Stretch="Fill" ImageSource="Assets/ambu booard.jpg"/>
     </Page.Background>
 
     <Grid>
@@ -27,10 +27,10 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <ListView x:Name="lstViewStatus" HorizontalAlignment="Left" Height="221" Margin="0,271,0,0" VerticalAlignment="Top" Width="400" FontSize="20" Background="{ThemeResource AppBarItemForegroundThemeBrush}"/>
+        <ListView x:Name="lstViewStatus" HorizontalAlignment="Left" Height="221" Margin="0,323,0,0" VerticalAlignment="Top" Width="400" FontSize="20"/>
         <Image HorizontalAlignment="Left" Height="63" Margin="10,10,0,0" VerticalAlignment="Top" Width="65" Source="Assets/ems_image.png"/>
         <TextBlock HorizontalAlignment="Left" Margin="30,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="380" FontSize="22" SelectionHighlightColor="#FF081A8B" FontWeight="Bold">
+        <TextBlock HorizontalAlignment="Left" Margin="35,228,-15,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="380" FontSize="22" SelectionHighlightColor="#FF081A8B" FontWeight="Bold">
         	<Run Text="View your Requested "/>
         	<Run Text="status"/>
         	<Run Text=" for                          "/>
